@@ -3,9 +3,7 @@ import pytest
 import dev.Shape as Shape
 
 class TestCircle:
-    
-    
-        
+            
     # setup method run first before each test method
     
     def setup_method(self,method):
