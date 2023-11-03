@@ -1,6 +1,7 @@
 import math
 import pytest
 import dev.Shape as Shape
+from pytest_learn.test.conftest import test_rectangle
 
 class TestCircle:
             
@@ -20,3 +21,5 @@ class TestCircle:
     def test_perimeter(self):
         assert self.circle.perimeter() == math.pi*2*self.circle.rad
         
+    def test_not_def_rectangle(self,test_rectangle):
+        assert self.circle.area() != test_rectangle
